@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="14460.31" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="R4M-fS-wDQ">
+    <device id="watch38" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="watchOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="14460.16"/>
+    </dependencies>
+    <scenes>
+        <!--main-->
+        <scene sceneID="e9y-iH-N8S">
+            <objects>
+                <controller identifier="main" id="R4M-fS-wDQ" customClass="InterfaceController" customModule="MirrorableHR_WatchKit_Extension">
+                    <items>
+                        <group width="1" height="0.69999999999999996" alignment="left" id="321-DA-buH">
+                            <items>
+                                <group width="0.45000000000000001" height="1" alignment="left" layout="vertical" id="ujy-xT-6nV">
+                                    <items>
+                                        <label alignment="center" text="HR" textAlignment="center" id="2j5-nf-yKF">
+                                            <fontDescription key="font" style="UICTFontTextStyleHeadline"/>
+                                        </label>
+                                        <label alignment="center" text="-" textAlignment="center" minimumScaleFactor="0.5" id="lrv-DZ-crr">
+                                            <fontDescription key="font" name="ArialHebrew-Bold" family="Arial Hebrew" pointSize="34"/>
+                                        </label>
+                                    </items>
+                                    <edgeInsets key="margins" left="4" right="0.0" top="14" bottom="0.0"/>
+                                </group>
+                                <separator alignment="center" id="o6k-dF-qWH"/>
+                                <group width="0.45000000000000001" height="1" alignment="right" layout="vertical" id="LTU-qw-Kbo">
+                                    <items>
+                                        <button width="1" height="1" alignment="center" verticalAlignment="center" title="Alert" id="bl8-gK-rZm">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <color key="backgroundColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <connections>
+                                                <action selector="sendAlert" destination="R4M-fS-wDQ" id="jcr-G3-T09"/>
+                                            </connections>
+                                        </button>
+                                    </items>
+                                    <edgeInsets key="margins" left="0.0" right="4" top="1" bottom="0.0"/>
+                                </group>
+                            </items>
+                        </group>
+                        <button width="1" height="0.29999999999999999" alignment="left" title="Start" id="94H-rT-qo5">
+                            <connections>
+                                <action selector="startStopSession" destination="R4M-fS-wDQ" id="2Zc-ZG-qew"/>
+                            </connections>
+                        </button>
+                    </items>
+                    <connections>
+                        <outlet property="heartRatelabel" destination="lrv-DZ-crr" id="uD9-jK-UAI"/>
+                        <outlet property="startStopButton" destination="94H-rT-qo5" id="Ubu-ap-g8N"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="-23" y="333"/>
+        </scene>
+    </scenes>
+</document>

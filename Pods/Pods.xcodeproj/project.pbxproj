@@ -1,0 +1,1025 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		24BC14147DCD22CF296D290684E42D1C /* Pods-MirrorableHR-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 80AC82D5B7DF596B3E4C747AFAAC89AF /* Pods-MirrorableHR-dummy.m */; };
+		2CFFBC34F3D5D462097142DD8B53FCCB /* Pods-MirrorableHRTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 31402E67931D7969BAD430ABA7ECC6A6 /* Pods-MirrorableHRTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		412F36F3494C7F9A2ADA8249B0D47907 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 079D0D73C3629E5FEE68C608D5700FF7 /* Foundation.framework */; };
+		49C70140841FC5DC98E16A49E839D563 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FB8812ECC1D6B6EE8950C080C8DA90BB /* Foundation.framework */; };
+		4AA9E7F9FCD06748C3A98FE9A8D5C7B9 /* Pods-MirrorableHR WatchKit App-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = DF4EF82B2FC6CA87130BB8A4FC3ADD6E /* Pods-MirrorableHR WatchKit App-dummy.m */; };
+		55BB1DC98EC8C9813158013FCDEA7B66 /* Pods-MirrorableHR WatchKit Extension-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 6073B9D60900CD416E734DA71D26FE3D /* Pods-MirrorableHR WatchKit Extension-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		63EC1F36F2F4D5D966EFD793380D5FF7 /* Pods-MirrorableHRTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 39981208F6E9610A9A871BC7E199C359 /* Pods-MirrorableHRTests-dummy.m */; };
+		64FB0F26BD921969968E546C7415B00F /* Pods-MirrorableHR-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 20D7447533AAED0A3BA2F84991C22183 /* Pods-MirrorableHR-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9904EDA4DA943E0D9D20FDF66B317C4D /* Pods-MirrorableHR WatchKit App-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = D9AAD6B400D7E71A8EE22AED8EDA13D9 /* Pods-MirrorableHR WatchKit App-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B585AE030A50AD3A272CF8ADB1810422 /* Pods-MirrorableHR WatchKit Extension-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 60125C263911C10A251D06057B75D07E /* Pods-MirrorableHR WatchKit Extension-dummy.m */; };
+		E6EBC59A37CC038A306A746ACC156074 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FB8812ECC1D6B6EE8950C080C8DA90BB /* Foundation.framework */; };
+		EA449B00F3EACEAAF0DF304551D4F873 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 079D0D73C3629E5FEE68C608D5700FF7 /* Foundation.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F5A75BC4B28700A9B71EEE969186D1C5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E008AADEB3CABB56446F952DBCBBB050;
+			remoteInfo = "Pods-MirrorableHR";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		007C7F36398F3290DDDFAA2DA8CC0D34 /* Pods-MirrorableHR WatchKit Extension-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-MirrorableHR WatchKit Extension-acknowledgements.plist"; sourceTree = "<group>"; };
+		079D0D73C3629E5FEE68C608D5700FF7 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		0BBD46E6ABC97ED6CEBEA0C4A3B9B6D4 /* Pods-MirrorableHRTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-MirrorableHRTests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		0E170E631CD344E8D570BDCCB3276976 /* Pods-MirrorableHRTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-MirrorableHRTests-acknowledgements.plist"; sourceTree = "<group>"; };
+		14DB5A6DD4268EB984228EDDD6D7EBAC /* Pods-MirrorableHRTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MirrorableHRTests.debug.xcconfig"; sourceTree = "<group>"; };
+		1BC74BD3DDAE961570FA5EF0C4540E55 /* Pods-MirrorableHRTests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-MirrorableHRTests-frameworks.sh"; sourceTree = "<group>"; };
+		20D7447533AAED0A3BA2F84991C22183 /* Pods-MirrorableHR-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-MirrorableHR-umbrella.h"; sourceTree = "<group>"; };
+		22B20CD847CA54D4323942C4345DDB7E /* AppCenterCrashes.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppCenterCrashes.framework; path = "AppCenter-SDK-Apple/iOS/AppCenterCrashes.framework"; sourceTree = "<group>"; };
+		22FF8609D9922293681AA5EC6B6145A0 /* Pods-MirrorableHR.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-MirrorableHR.modulemap"; sourceTree = "<group>"; };
+		24390EFD555DD124430DFF9724065945 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		2A6E03789C05CE8A84A76460BAD3ACEB /* Pods-MirrorableHR WatchKit Extension-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-MirrorableHR WatchKit Extension-frameworks.sh"; sourceTree = "<group>"; };
+		31402E67931D7969BAD430ABA7ECC6A6 /* Pods-MirrorableHRTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-MirrorableHRTests-umbrella.h"; sourceTree = "<group>"; };
+		330B205AECB62B987F622E5151004C68 /* Pods-MirrorableHRTests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-MirrorableHRTests-resources.sh"; sourceTree = "<group>"; };
+		391F2F6F638C628976D56E4BB514675A /* Pods-MirrorableHR WatchKit App-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-MirrorableHR WatchKit App-acknowledgements.markdown"; sourceTree = "<group>"; };
+		39981208F6E9610A9A871BC7E199C359 /* Pods-MirrorableHRTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-MirrorableHRTests-dummy.m"; sourceTree = "<group>"; };
+		474A944AEC175091D1EE995BA9AD133E /* Pods-MirrorableHR-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-MirrorableHR-resources.sh"; sourceTree = "<group>"; };
+		50B2B66383AC297EADB2B890CF5538C4 /* Pods-MirrorableHR WatchKit App-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-MirrorableHR WatchKit App-frameworks.sh"; sourceTree = "<group>"; };
+		5B1C8D450F762714D6186A26CAFC1B15 /* Pods_MirrorableHR.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_MirrorableHR.framework; path = "Pods-MirrorableHR.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5CD603071D619303C31DAE28C1A481CC /* Pods-MirrorableHR WatchKit Extension-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-MirrorableHR WatchKit Extension-resources.sh"; sourceTree = "<group>"; };
+		5DA931BA74EC3999F1FB6DAEF8FEA1DE /* Pods-MirrorableHR WatchKit App-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-MirrorableHR WatchKit App-acknowledgements.plist"; sourceTree = "<group>"; };
+		5F2026D209B8E93D6EF3E5D54544FE7E /* Pods-MirrorableHR WatchKit Extension.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MirrorableHR WatchKit Extension.release.xcconfig"; sourceTree = "<group>"; };
+		60125C263911C10A251D06057B75D07E /* Pods-MirrorableHR WatchKit Extension-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-MirrorableHR WatchKit Extension-dummy.m"; sourceTree = "<group>"; };
+		6073B9D60900CD416E734DA71D26FE3D /* Pods-MirrorableHR WatchKit Extension-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-MirrorableHR WatchKit Extension-umbrella.h"; sourceTree = "<group>"; };
+		6E477E92CE5E95AF209A0BD0461D208A /* Pods_MirrorableHR_WatchKit_Extension.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_MirrorableHR_WatchKit_Extension.framework; path = "Pods-MirrorableHR WatchKit Extension.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		708DEE92B97A0CE9F64FA70DB8DCCB99 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		768E5013F2F0AD1443B921BFB0B8219E /* Pods-MirrorableHR WatchKit Extension.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MirrorableHR WatchKit Extension.debug.xcconfig"; sourceTree = "<group>"; };
+		7E2E0E62587ADA8BB29C562B2F968F14 /* Pods_MirrorableHR_WatchKit_App.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_MirrorableHR_WatchKit_App.framework; path = "Pods-MirrorableHR WatchKit App.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		80AC82D5B7DF596B3E4C747AFAAC89AF /* Pods-MirrorableHR-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-MirrorableHR-dummy.m"; sourceTree = "<group>"; };
+		8868072A712CF96049DEA8971777151A /* Pods-MirrorableHR WatchKit App.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MirrorableHR WatchKit App.release.xcconfig"; sourceTree = "<group>"; };
+		8BBC8679E50C342080CC1C8408A23840 /* Pods-MirrorableHR WatchKit App-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-MirrorableHR WatchKit App-resources.sh"; sourceTree = "<group>"; };
+		90F9C5B692F5576F9A41B2D4E8D0BB9E /* Pods-MirrorableHRTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-MirrorableHRTests.modulemap"; sourceTree = "<group>"; };
+		92B6B7A6CE58CF9D0215794F2786F859 /* Pods-MirrorableHR WatchKit Extension-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-MirrorableHR WatchKit Extension-acknowledgements.markdown"; sourceTree = "<group>"; };
+		94BEFECD7CC8D5FE6E0FB44CEEBAE938 /* Pods-MirrorableHR WatchKit App.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-MirrorableHR WatchKit App.modulemap"; sourceTree = "<group>"; };
+		A0A85B20A3755D536E9921DE6BFAE3EA /* Pods-MirrorableHR.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MirrorableHR.debug.xcconfig"; sourceTree = "<group>"; };
+		A7047E9FCA2157C46D846863E92A4D1C /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B39EED6E4CC5205C7DEC4BCA6D0E9F8D /* AppCenterAnalytics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppCenterAnalytics.framework; path = "AppCenter-SDK-Apple/iOS/AppCenterAnalytics.framework"; sourceTree = "<group>"; };
+		B548725DABEA94741FDFB3F0A27A2A3A /* Pods-MirrorableHR WatchKit Extension.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-MirrorableHR WatchKit Extension.modulemap"; sourceTree = "<group>"; };
+		D0CAAB6D0C395B64BA860315AAF95AAC /* Pods_MirrorableHRTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_MirrorableHRTests.framework; path = "Pods-MirrorableHRTests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D2C7C3D9F3B350A5284B4D8D1D1F8029 /* Pods-MirrorableHR.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MirrorableHR.release.xcconfig"; sourceTree = "<group>"; };
+		D55BAEFB9634C6554052AB25A5AB948C /* Pods-MirrorableHR-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-MirrorableHR-acknowledgements.plist"; sourceTree = "<group>"; };
+		D7EE1BB351D8D7F4B221F52B7E31B2C6 /* AppCenter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppCenter.framework; path = "AppCenter-SDK-Apple/iOS/AppCenter.framework"; sourceTree = "<group>"; };
+		D9AAD6B400D7E71A8EE22AED8EDA13D9 /* Pods-MirrorableHR WatchKit App-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-MirrorableHR WatchKit App-umbrella.h"; sourceTree = "<group>"; };
+		D9D99CD438A84C772E0FEB27DAD69A3F /* Pods-MirrorableHRTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MirrorableHRTests.release.xcconfig"; sourceTree = "<group>"; };
+		DA92938FBE86CCAE951512CA6728A01B /* Pods-MirrorableHR-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-MirrorableHR-frameworks.sh"; sourceTree = "<group>"; };
+		DCAA7F1F1DBBBEA427E6DF41EF44688F /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DF4EF82B2FC6CA87130BB8A4FC3ADD6E /* Pods-MirrorableHR WatchKit App-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-MirrorableHR WatchKit App-dummy.m"; sourceTree = "<group>"; };
+		EAB6199345926A0D0EC0D25331CD9948 /* Pods-MirrorableHR-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-MirrorableHR-acknowledgements.markdown"; sourceTree = "<group>"; };
+		EB7E60DC01B657B2405F4EF23F18B2C3 /* Pods-MirrorableHR WatchKit App.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MirrorableHR WatchKit App.debug.xcconfig"; sourceTree = "<group>"; };
+		F1251BD60EBEE546FBE346D47A13BFBB /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FB8812ECC1D6B6EE8950C080C8DA90BB /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/WatchOS.platform/Developer/SDKs/WatchOS5.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		75F88A07A34D5465BB2F379339B844F9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				49C70140841FC5DC98E16A49E839D563 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		75F90B1F5812B2F9F1175467678F9680 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EA449B00F3EACEAAF0DF304551D4F873 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B1B4026A04BBE54F81CF4E48CE45DE47 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				412F36F3494C7F9A2ADA8249B0D47907 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FA40C46E305610FF211B54DB64C5996D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E6EBC59A37CC038A306A746ACC156074 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0444D2915AF645810C79194BF3893DB4 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				079D0D73C3629E5FEE68C608D5700FF7 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		08FA4E6C59DECEF2B09E683212964DCD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B39EED6E4CC5205C7DEC4BCA6D0E9F8D /* AppCenterAnalytics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		27DFE208EDB5F2BBD9970E96DD36C683 /* AppCenter */ = {
+			isa = PBXGroup;
+			children = (
+				FCE9452312573F0F9A4EB268189ED88B /* Analytics */,
+				A075B21CBBDE146942A9A1410760D1B3 /* Core */,
+				9A550A1EA242985A8AB5BEECDBB336F0 /* Crashes */,
+			);
+			name = AppCenter;
+			path = AppCenter;
+			sourceTree = "<group>";
+		};
+		386CF804A29FDFDFC188CBFD8CD1BE1F /* Pods-MirrorableHR */ = {
+			isa = PBXGroup;
+			children = (
+				F1251BD60EBEE546FBE346D47A13BFBB /* Info.plist */,
+				22FF8609D9922293681AA5EC6B6145A0 /* Pods-MirrorableHR.modulemap */,
+				EAB6199345926A0D0EC0D25331CD9948 /* Pods-MirrorableHR-acknowledgements.markdown */,
+				D55BAEFB9634C6554052AB25A5AB948C /* Pods-MirrorableHR-acknowledgements.plist */,
+				80AC82D5B7DF596B3E4C747AFAAC89AF /* Pods-MirrorableHR-dummy.m */,
+				DA92938FBE86CCAE951512CA6728A01B /* Pods-MirrorableHR-frameworks.sh */,
+				474A944AEC175091D1EE995BA9AD133E /* Pods-MirrorableHR-resources.sh */,
+				20D7447533AAED0A3BA2F84991C22183 /* Pods-MirrorableHR-umbrella.h */,
+				A0A85B20A3755D536E9921DE6BFAE3EA /* Pods-MirrorableHR.debug.xcconfig */,
+				D2C7C3D9F3B350A5284B4D8D1D1F8029 /* Pods-MirrorableHR.release.xcconfig */,
+			);
+			name = "Pods-MirrorableHR";
+			path = "Target Support Files/Pods-MirrorableHR";
+			sourceTree = "<group>";
+		};
+		3C93E1ADB60F5A9CEF07230E92128A7B /* watchOS */ = {
+			isa = PBXGroup;
+			children = (
+				FB8812ECC1D6B6EE8950C080C8DA90BB /* Foundation.framework */,
+			);
+			name = watchOS;
+			sourceTree = "<group>";
+		};
+		54CCD06893F300F5B2C02DAFD57093E1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0444D2915AF645810C79194BF3893DB4 /* iOS */,
+				3C93E1ADB60F5A9CEF07230E92128A7B /* watchOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		567AD8154A11D145E9148D32B10BB113 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5B1C8D450F762714D6186A26CAFC1B15 /* Pods_MirrorableHR.framework */,
+				7E2E0E62587ADA8BB29C562B2F968F14 /* Pods_MirrorableHR_WatchKit_App.framework */,
+				6E477E92CE5E95AF209A0BD0461D208A /* Pods_MirrorableHR_WatchKit_Extension.framework */,
+				D0CAAB6D0C395B64BA860315AAF95AAC /* Pods_MirrorableHRTests.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		573EE597EFAE89243CD8D16D857D1FEF /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				27DFE208EDB5F2BBD9970E96DD36C683 /* AppCenter */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		65EFC55AC7653A130D7031EB1B1DBB07 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				386CF804A29FDFDFC188CBFD8CD1BE1F /* Pods-MirrorableHR */,
+				EFBD9354438B94C4AAF91204CFAC0586 /* Pods-MirrorableHR WatchKit App */,
+				9A4517B102267F220F83D62E1C1E56FA /* Pods-MirrorableHR WatchKit Extension */,
+				954A9B2716D39278A856D367D223E380 /* Pods-MirrorableHRTests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		954A9B2716D39278A856D367D223E380 /* Pods-MirrorableHRTests */ = {
+			isa = PBXGroup;
+			children = (
+				A7047E9FCA2157C46D846863E92A4D1C /* Info.plist */,
+				90F9C5B692F5576F9A41B2D4E8D0BB9E /* Pods-MirrorableHRTests.modulemap */,
+				0BBD46E6ABC97ED6CEBEA0C4A3B9B6D4 /* Pods-MirrorableHRTests-acknowledgements.markdown */,
+				0E170E631CD344E8D570BDCCB3276976 /* Pods-MirrorableHRTests-acknowledgements.plist */,
+				39981208F6E9610A9A871BC7E199C359 /* Pods-MirrorableHRTests-dummy.m */,
+				1BC74BD3DDAE961570FA5EF0C4540E55 /* Pods-MirrorableHRTests-frameworks.sh */,
+				330B205AECB62B987F622E5151004C68 /* Pods-MirrorableHRTests-resources.sh */,
+				31402E67931D7969BAD430ABA7ECC6A6 /* Pods-MirrorableHRTests-umbrella.h */,
+				14DB5A6DD4268EB984228EDDD6D7EBAC /* Pods-MirrorableHRTests.debug.xcconfig */,
+				D9D99CD438A84C772E0FEB27DAD69A3F /* Pods-MirrorableHRTests.release.xcconfig */,
+			);
+			name = "Pods-MirrorableHRTests";
+			path = "Target Support Files/Pods-MirrorableHRTests";
+			sourceTree = "<group>";
+		};
+		9A4517B102267F220F83D62E1C1E56FA /* Pods-MirrorableHR WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				708DEE92B97A0CE9F64FA70DB8DCCB99 /* Info.plist */,
+				B548725DABEA94741FDFB3F0A27A2A3A /* Pods-MirrorableHR WatchKit Extension.modulemap */,
+				92B6B7A6CE58CF9D0215794F2786F859 /* Pods-MirrorableHR WatchKit Extension-acknowledgements.markdown */,
+				007C7F36398F3290DDDFAA2DA8CC0D34 /* Pods-MirrorableHR WatchKit Extension-acknowledgements.plist */,
+				60125C263911C10A251D06057B75D07E /* Pods-MirrorableHR WatchKit Extension-dummy.m */,
+				2A6E03789C05CE8A84A76460BAD3ACEB /* Pods-MirrorableHR WatchKit Extension-frameworks.sh */,
+				5CD603071D619303C31DAE28C1A481CC /* Pods-MirrorableHR WatchKit Extension-resources.sh */,
+				6073B9D60900CD416E734DA71D26FE3D /* Pods-MirrorableHR WatchKit Extension-umbrella.h */,
+				768E5013F2F0AD1443B921BFB0B8219E /* Pods-MirrorableHR WatchKit Extension.debug.xcconfig */,
+				5F2026D209B8E93D6EF3E5D54544FE7E /* Pods-MirrorableHR WatchKit Extension.release.xcconfig */,
+			);
+			name = "Pods-MirrorableHR WatchKit Extension";
+			path = "Target Support Files/Pods-MirrorableHR WatchKit Extension";
+			sourceTree = "<group>";
+		};
+		9A550A1EA242985A8AB5BEECDBB336F0 /* Crashes */ = {
+			isa = PBXGroup;
+			children = (
+				CEF50AE26E5FD18CE2D71AA804318612 /* Frameworks */,
+			);
+			name = Crashes;
+			sourceTree = "<group>";
+		};
+		A075B21CBBDE146942A9A1410760D1B3 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				AA6A6F9A383F110BB151F4DC0664C0B5 /* Frameworks */,
+			);
+			name = Core;
+			sourceTree = "<group>";
+		};
+		AA6A6F9A383F110BB151F4DC0664C0B5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D7EE1BB351D8D7F4B221F52B7E31B2C6 /* AppCenter.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CEF50AE26E5FD18CE2D71AA804318612 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				22B20CD847CA54D4323942C4345DDB7E /* AppCenterCrashes.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CF1408CF629C7361332E53B88F7BD30C = {
+			isa = PBXGroup;
+			children = (
+				24390EFD555DD124430DFF9724065945 /* Podfile */,
+				54CCD06893F300F5B2C02DAFD57093E1 /* Frameworks */,
+				573EE597EFAE89243CD8D16D857D1FEF /* Pods */,
+				567AD8154A11D145E9148D32B10BB113 /* Products */,
+				65EFC55AC7653A130D7031EB1B1DBB07 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		EFBD9354438B94C4AAF91204CFAC0586 /* Pods-MirrorableHR WatchKit App */ = {
+			isa = PBXGroup;
+			children = (
+				DCAA7F1F1DBBBEA427E6DF41EF44688F /* Info.plist */,
+				94BEFECD7CC8D5FE6E0FB44CEEBAE938 /* Pods-MirrorableHR WatchKit App.modulemap */,
+				391F2F6F638C628976D56E4BB514675A /* Pods-MirrorableHR WatchKit App-acknowledgements.markdown */,
+				5DA931BA74EC3999F1FB6DAEF8FEA1DE /* Pods-MirrorableHR WatchKit App-acknowledgements.plist */,
+				DF4EF82B2FC6CA87130BB8A4FC3ADD6E /* Pods-MirrorableHR WatchKit App-dummy.m */,
+				50B2B66383AC297EADB2B890CF5538C4 /* Pods-MirrorableHR WatchKit App-frameworks.sh */,
+				8BBC8679E50C342080CC1C8408A23840 /* Pods-MirrorableHR WatchKit App-resources.sh */,
+				D9AAD6B400D7E71A8EE22AED8EDA13D9 /* Pods-MirrorableHR WatchKit App-umbrella.h */,
+				EB7E60DC01B657B2405F4EF23F18B2C3 /* Pods-MirrorableHR WatchKit App.debug.xcconfig */,
+				8868072A712CF96049DEA8971777151A /* Pods-MirrorableHR WatchKit App.release.xcconfig */,
+			);
+			name = "Pods-MirrorableHR WatchKit App";
+			path = "Target Support Files/Pods-MirrorableHR WatchKit App";
+			sourceTree = "<group>";
+		};
+		FCE9452312573F0F9A4EB268189ED88B /* Analytics */ = {
+			isa = PBXGroup;
+			children = (
+				08FA4E6C59DECEF2B09E683212964DCD /* Frameworks */,
+			);
+			name = Analytics;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		1D6CEB57D88E295CC27BD12AE1CCF996 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2CFFBC34F3D5D462097142DD8B53FCCB /* Pods-MirrorableHRTests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2F0F65BB816742CF35012995D40266B8 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9904EDA4DA943E0D9D20FDF66B317C4D /* Pods-MirrorableHR WatchKit App-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		494B8026AF00271D557B7518569D00DC /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				55BB1DC98EC8C9813158013FCDEA7B66 /* Pods-MirrorableHR WatchKit Extension-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		97BF388EA4846B1C49E016E88D8FC80F /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				64FB0F26BD921969968E546C7415B00F /* Pods-MirrorableHR-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		7949D3F6E1465C6B27E13A465CBC1437 /* Pods-MirrorableHR WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 424A80BC8C21A8DBE54CCC618B12582C /* Build configuration list for PBXNativeTarget "Pods-MirrorableHR WatchKit Extension" */;
+			buildPhases = (
+				494B8026AF00271D557B7518569D00DC /* Headers */,
+				2656F2B5F62D2EE5D99CE8294F5E68B9 /* Sources */,
+				75F88A07A34D5465BB2F379339B844F9 /* Frameworks */,
+				F09A7A860A1998219C36C04AF0C93E73 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-MirrorableHR WatchKit Extension";
+			productName = "Pods-MirrorableHR WatchKit Extension";
+			productReference = 6E477E92CE5E95AF209A0BD0461D208A /* Pods_MirrorableHR_WatchKit_Extension.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		D24F63F18D346073AE817DFF65BF0951 /* Pods-MirrorableHRTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4AD2CDE3399AECD0BEC9CBC84CA905B2 /* Build configuration list for PBXNativeTarget "Pods-MirrorableHRTests" */;
+			buildPhases = (
+				1D6CEB57D88E295CC27BD12AE1CCF996 /* Headers */,
+				676A9D26AB86DBC00894F13FCBE3385D /* Sources */,
+				75F90B1F5812B2F9F1175467678F9680 /* Frameworks */,
+				8A4152ACFAC620D07F1005DE31486017 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4451435368509737DB968950A52D3FF0 /* PBXTargetDependency */,
+			);
+			name = "Pods-MirrorableHRTests";
+			productName = "Pods-MirrorableHRTests";
+			productReference = D0CAAB6D0C395B64BA860315AAF95AAC /* Pods_MirrorableHRTests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		DFFF87BDF5801966A7A5C8958002BFE3 /* Pods-MirrorableHR WatchKit App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7F6204EC423603E2423213288995372C /* Build configuration list for PBXNativeTarget "Pods-MirrorableHR WatchKit App" */;
+			buildPhases = (
+				2F0F65BB816742CF35012995D40266B8 /* Headers */,
+				388B2CD28F7A60DB88CBA2CCDD416E13 /* Sources */,
+				FA40C46E305610FF211B54DB64C5996D /* Frameworks */,
+				BCD83B9490B89BD82DDC49696D2EB50D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-MirrorableHR WatchKit App";
+			productName = "Pods-MirrorableHR WatchKit App";
+			productReference = 7E2E0E62587ADA8BB29C562B2F968F14 /* Pods_MirrorableHR_WatchKit_App.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		E008AADEB3CABB56446F952DBCBBB050 /* Pods-MirrorableHR */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5771C1BD7E4F5F112005B9C0AAE1749C /* Build configuration list for PBXNativeTarget "Pods-MirrorableHR" */;
+			buildPhases = (
+				97BF388EA4846B1C49E016E88D8FC80F /* Headers */,
+				285236C2E19A53D53804DFA161F7A5D9 /* Sources */,
+				B1B4026A04BBE54F81CF4E48CE45DE47 /* Frameworks */,
+				D8A20EA530B42AD1E841CE4592388716 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-MirrorableHR";
+			productName = "Pods-MirrorableHR";
+			productReference = 5B1C8D450F762714D6186A26CAFC1B15 /* Pods_MirrorableHR.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0930;
+				LastUpgradeCheck = 0930;
+			};
+			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
+			productRefGroup = 567AD8154A11D145E9148D32B10BB113 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E008AADEB3CABB56446F952DBCBBB050 /* Pods-MirrorableHR */,
+				DFFF87BDF5801966A7A5C8958002BFE3 /* Pods-MirrorableHR WatchKit App */,
+				7949D3F6E1465C6B27E13A465CBC1437 /* Pods-MirrorableHR WatchKit Extension */,
+				D24F63F18D346073AE817DFF65BF0951 /* Pods-MirrorableHRTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8A4152ACFAC620D07F1005DE31486017 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BCD83B9490B89BD82DDC49696D2EB50D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D8A20EA530B42AD1E841CE4592388716 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F09A7A860A1998219C36C04AF0C93E73 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2656F2B5F62D2EE5D99CE8294F5E68B9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B585AE030A50AD3A272CF8ADB1810422 /* Pods-MirrorableHR WatchKit Extension-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		285236C2E19A53D53804DFA161F7A5D9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				24BC14147DCD22CF296D290684E42D1C /* Pods-MirrorableHR-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		388B2CD28F7A60DB88CBA2CCDD416E13 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4AA9E7F9FCD06748C3A98FE9A8D5C7B9 /* Pods-MirrorableHR WatchKit App-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		676A9D26AB86DBC00894F13FCBE3385D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				63EC1F36F2F4D5D966EFD793380D5FF7 /* Pods-MirrorableHRTests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		4451435368509737DB968950A52D3FF0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-MirrorableHR";
+			target = E008AADEB3CABB56446F952DBCBBB050 /* Pods-MirrorableHR */;
+			targetProxy = F5A75BC4B28700A9B71EEE969186D1C5 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		08B6BC17851CB56A7F3C1618807191E3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 14DB5A6DD4268EB984228EDDD6D7EBAC /* Pods-MirrorableHRTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-MirrorableHRTests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-MirrorableHRTests/Pods-MirrorableHRTests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		127B4C5E95349C697D32363CF1C9D721 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_ALLOWED = NO;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.2;
+				SYMROOT = "${SRCROOT}/../build";
+				WATCHOS_DEPLOYMENT_TARGET = 5.1;
+			};
+			name = Debug;
+		};
+		1522D544162544F3EDD240C32B52FEDC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EB7E60DC01B657B2405F4EF23F18B2C3 /* Pods-MirrorableHR WatchKit App.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-MirrorableHR WatchKit App/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-MirrorableHR WatchKit App/Pods-MirrorableHR WatchKit App.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+				WATCHOS_DEPLOYMENT_TARGET = 5.1;
+			};
+			name = Debug;
+		};
+		184C3408431970B51E0AD52510D43A5F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 768E5013F2F0AD1443B921BFB0B8219E /* Pods-MirrorableHR WatchKit Extension.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-MirrorableHR WatchKit Extension/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-MirrorableHR WatchKit Extension/Pods-MirrorableHR WatchKit Extension.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+				WATCHOS_DEPLOYMENT_TARGET = 5.1;
+			};
+			name = Debug;
+		};
+		3A382E6469C90B6FA400CB3EA3C0055F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_ALLOWED = NO;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 4.2;
+				SYMROOT = "${SRCROOT}/../build";
+				WATCHOS_DEPLOYMENT_TARGET = 5.1;
+			};
+			name = Release;
+		};
+		97DA1EC496A90BCBD6AA6E7BE55CAD0F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A0A85B20A3755D536E9921DE6BFAE3EA /* Pods-MirrorableHR.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-MirrorableHR/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-MirrorableHR/Pods-MirrorableHR.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		9D8F3A9199AF0A5101A65E2C1275258A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5F2026D209B8E93D6EF3E5D54544FE7E /* Pods-MirrorableHR WatchKit Extension.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-MirrorableHR WatchKit Extension/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-MirrorableHR WatchKit Extension/Pods-MirrorableHR WatchKit Extension.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+				WATCHOS_DEPLOYMENT_TARGET = 5.1;
+			};
+			name = Release;
+		};
+		BC77315795E8F6116AA672A3760978BD /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8868072A712CF96049DEA8971777151A /* Pods-MirrorableHR WatchKit App.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-MirrorableHR WatchKit App/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-MirrorableHR WatchKit App/Pods-MirrorableHR WatchKit App.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+				WATCHOS_DEPLOYMENT_TARGET = 5.1;
+			};
+			name = Release;
+		};
+		BCE0B8B4C1367A31E31EEFE7E12D09F1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D9D99CD438A84C772E0FEB27DAD69A3F /* Pods-MirrorableHRTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-MirrorableHRTests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-MirrorableHRTests/Pods-MirrorableHRTests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		ED2BAD4F560277677F46EA7EDF95ABD6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D2C7C3D9F3B350A5284B4D8D1D1F8029 /* Pods-MirrorableHR.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-MirrorableHR/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-MirrorableHR/Pods-MirrorableHR.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		424A80BC8C21A8DBE54CCC618B12582C /* Build configuration list for PBXNativeTarget "Pods-MirrorableHR WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				184C3408431970B51E0AD52510D43A5F /* Debug */,
+				9D8F3A9199AF0A5101A65E2C1275258A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				127B4C5E95349C697D32363CF1C9D721 /* Debug */,
+				3A382E6469C90B6FA400CB3EA3C0055F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4AD2CDE3399AECD0BEC9CBC84CA905B2 /* Build configuration list for PBXNativeTarget "Pods-MirrorableHRTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				08B6BC17851CB56A7F3C1618807191E3 /* Debug */,
+				BCE0B8B4C1367A31E31EEFE7E12D09F1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5771C1BD7E4F5F112005B9C0AAE1749C /* Build configuration list for PBXNativeTarget "Pods-MirrorableHR" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				97DA1EC496A90BCBD6AA6E7BE55CAD0F /* Debug */,
+				ED2BAD4F560277677F46EA7EDF95ABD6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7F6204EC423603E2423213288995372C /* Build configuration list for PBXNativeTarget "Pods-MirrorableHR WatchKit App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1522D544162544F3EDD240C32B52FEDC /* Debug */,
+				BC77315795E8F6116AA672A3760978BD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+}

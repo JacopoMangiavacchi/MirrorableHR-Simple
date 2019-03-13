@@ -1,0 +1,952 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2588CE90745FAF0DFF6AD803 /* Pods_MirrorableHRTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 44D9B16AA59BC7DB725A9311 /* Pods_MirrorableHRTests.framework */; };
+		A409C7849169DA0D9797D4FC /* Pods_MirrorableHR_WatchKit_App.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1C54246D969BBCF5CD96FC95 /* Pods_MirrorableHR_WatchKit_App.framework */; };
+		CAF64923CD89466710943B32 /* Pods_MirrorableHR_WatchKit_Extension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB2A4D970EEDE125160A598A /* Pods_MirrorableHR_WatchKit_Extension.framework */; };
+		EA69C2B92203E118003028E2 /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EA69C2B82203E118003028E2 /* HealthKit.framework */; };
+		EA69C2BC2203E15A003028E2 /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EA69C2BB2203E15A003028E2 /* HealthKit.framework */; };
+		EA69C2BE2203E21D003028E2 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA69C2BD2203E21C003028E2 /* TableViewController.swift */; };
+		EAFF22822203E08E0084F0C8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAFF22812203E08E0084F0C8 /* AppDelegate.swift */; };
+		EAFF22872203E08E0084F0C8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EAFF22852203E08E0084F0C8 /* Main.storyboard */; };
+		EAFF22892203E0900084F0C8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EAFF22882203E0900084F0C8 /* Assets.xcassets */; };
+		EAFF228C2203E0900084F0C8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EAFF228A2203E0900084F0C8 /* LaunchScreen.storyboard */; };
+		EAFF22972203E0900084F0C8 /* MirrorableHRTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAFF22962203E0900084F0C8 /* MirrorableHRTests.swift */; };
+		EAFF229C2203E0900084F0C8 /* MirrorableHR WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = EAFF229B2203E0900084F0C8 /* MirrorableHR WatchKit App.app */; };
+		EAFF22A22203E0900084F0C8 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EAFF22A02203E0900084F0C8 /* Interface.storyboard */; };
+		EAFF22A42203E0900084F0C8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EAFF22A32203E0900084F0C8 /* Assets.xcassets */; };
+		EAFF22AB2203E0900084F0C8 /* MirrorableHR WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = EAFF22AA2203E0900084F0C8 /* MirrorableHR WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		EAFF22B02203E0900084F0C8 /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAFF22AF2203E0900084F0C8 /* InterfaceController.swift */; };
+		EAFF22B22203E0900084F0C8 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAFF22B12203E0900084F0C8 /* ExtensionDelegate.swift */; };
+		EAFF22B42203E0910084F0C8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EAFF22B32203E0910084F0C8 /* Assets.xcassets */; };
+		EEEF488497E2918312C14AC8 /* Pods_MirrorableHR.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 169AB0AEAA368A2DB5B3B428 /* Pods_MirrorableHR.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		EAFF22932203E0900084F0C8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EAFF22762203E08E0084F0C8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EAFF227D2203E08E0084F0C8;
+			remoteInfo = MirrorableHR;
+		};
+		EAFF229D2203E0900084F0C8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EAFF22762203E08E0084F0C8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EAFF229A2203E0900084F0C8;
+			remoteInfo = "MirrorableHR WatchKit App";
+		};
+		EAFF22AC2203E0900084F0C8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EAFF22762203E08E0084F0C8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EAFF22A92203E0900084F0C8;
+			remoteInfo = "MirrorableHR WatchKit Extension";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		EAFF22BB2203E0910084F0C8 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				EAFF22AB2203E0900084F0C8 /* MirrorableHR WatchKit Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EAFF22BF2203E0910084F0C8 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				EAFF229C2203E0900084F0C8 /* MirrorableHR WatchKit App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		169AB0AEAA368A2DB5B3B428 /* Pods_MirrorableHR.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MirrorableHR.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1C54246D969BBCF5CD96FC95 /* Pods_MirrorableHR_WatchKit_App.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MirrorableHR_WatchKit_App.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		30713261902F24153C4108DD /* Pods-MirrorableHRTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MirrorableHRTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-MirrorableHRTests/Pods-MirrorableHRTests.release.xcconfig"; sourceTree = "<group>"; };
+		3298E0D6864251B9E14625FD /* Pods-MirrorableHR WatchKit App.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MirrorableHR WatchKit App.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MirrorableHR WatchKit App/Pods-MirrorableHR WatchKit App.debug.xcconfig"; sourceTree = "<group>"; };
+		44D9B16AA59BC7DB725A9311 /* Pods_MirrorableHRTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MirrorableHRTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5A40B0496B85008E720DE22A /* Pods-MirrorableHR.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MirrorableHR.release.xcconfig"; path = "Pods/Target Support Files/Pods-MirrorableHR/Pods-MirrorableHR.release.xcconfig"; sourceTree = "<group>"; };
+		6BDD247AEA76D55C9869AFD9 /* Pods-MirrorableHR WatchKit Extension.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MirrorableHR WatchKit Extension.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MirrorableHR WatchKit Extension/Pods-MirrorableHR WatchKit Extension.debug.xcconfig"; sourceTree = "<group>"; };
+		AA1F0697EC812250A4C127DB /* Pods-MirrorableHRTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MirrorableHRTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MirrorableHRTests/Pods-MirrorableHRTests.debug.xcconfig"; sourceTree = "<group>"; };
+		B4412343534BA5014AC85A67 /* Pods-MirrorableHR WatchKit App.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MirrorableHR WatchKit App.release.xcconfig"; path = "Pods/Target Support Files/Pods-MirrorableHR WatchKit App/Pods-MirrorableHR WatchKit App.release.xcconfig"; sourceTree = "<group>"; };
+		CF1FBFE0174CAA98179837AE /* Pods-MirrorableHR WatchKit Extension.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MirrorableHR WatchKit Extension.release.xcconfig"; path = "Pods/Target Support Files/Pods-MirrorableHR WatchKit Extension/Pods-MirrorableHR WatchKit Extension.release.xcconfig"; sourceTree = "<group>"; };
+		D5B4590A2858F7877E3C7649 /* Pods-MirrorableHR.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MirrorableHR.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MirrorableHR/Pods-MirrorableHR.debug.xcconfig"; sourceTree = "<group>"; };
+		EA69C2B62203E118003028E2 /* MirrorableHR.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = MirrorableHR.entitlements; sourceTree = "<group>"; };
+		EA69C2B82203E118003028E2 /* HealthKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HealthKit.framework; path = System/Library/Frameworks/HealthKit.framework; sourceTree = SDKROOT; };
+		EA69C2BA2203E15A003028E2 /* MirrorableHR WatchKit Extension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "MirrorableHR WatchKit Extension.entitlements"; sourceTree = "<group>"; };
+		EA69C2BB2203E15A003028E2 /* HealthKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HealthKit.framework; path = Platforms/WatchOS.platform/Developer/SDKs/WatchOS5.1.sdk/System/Library/Frameworks/HealthKit.framework; sourceTree = DEVELOPER_DIR; };
+		EA69C2BD2203E21C003028E2 /* TableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
+		EAFF227E2203E08E0084F0C8 /* MirrorableHR.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MirrorableHR.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		EAFF22812203E08E0084F0C8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		EAFF22862203E08E0084F0C8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		EAFF22882203E0900084F0C8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		EAFF228B2203E0900084F0C8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		EAFF228D2203E0900084F0C8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EAFF22922203E0900084F0C8 /* MirrorableHRTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MirrorableHRTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		EAFF22962203E0900084F0C8 /* MirrorableHRTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MirrorableHRTests.swift; sourceTree = "<group>"; };
+		EAFF22982203E0900084F0C8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EAFF229B2203E0900084F0C8 /* MirrorableHR WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "MirrorableHR WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EAFF22A12203E0900084F0C8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		EAFF22A32203E0900084F0C8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		EAFF22A52203E0900084F0C8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EAFF22AA2203E0900084F0C8 /* MirrorableHR WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "MirrorableHR WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EAFF22AF2203E0900084F0C8 /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		EAFF22B12203E0900084F0C8 /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		EAFF22B32203E0910084F0C8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		EAFF22B52203E0910084F0C8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EB2A4D970EEDE125160A598A /* Pods_MirrorableHR_WatchKit_Extension.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MirrorableHR_WatchKit_Extension.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		EAFF227B2203E08E0084F0C8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EA69C2B92203E118003028E2 /* HealthKit.framework in Frameworks */,
+				EEEF488497E2918312C14AC8 /* Pods_MirrorableHR.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EAFF228F2203E0900084F0C8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2588CE90745FAF0DFF6AD803 /* Pods_MirrorableHRTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EAFF22A72203E0900084F0C8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EA69C2BC2203E15A003028E2 /* HealthKit.framework in Frameworks */,
+				CAF64923CD89466710943B32 /* Pods_MirrorableHR_WatchKit_Extension.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F5A9F62C2746314B5C9A389B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A409C7849169DA0D9797D4FC /* Pods_MirrorableHR_WatchKit_App.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		9BB1BCC11B7724D9E8671ABA /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D5B4590A2858F7877E3C7649 /* Pods-MirrorableHR.debug.xcconfig */,
+				5A40B0496B85008E720DE22A /* Pods-MirrorableHR.release.xcconfig */,
+				3298E0D6864251B9E14625FD /* Pods-MirrorableHR WatchKit App.debug.xcconfig */,
+				B4412343534BA5014AC85A67 /* Pods-MirrorableHR WatchKit App.release.xcconfig */,
+				6BDD247AEA76D55C9869AFD9 /* Pods-MirrorableHR WatchKit Extension.debug.xcconfig */,
+				CF1FBFE0174CAA98179837AE /* Pods-MirrorableHR WatchKit Extension.release.xcconfig */,
+				AA1F0697EC812250A4C127DB /* Pods-MirrorableHRTests.debug.xcconfig */,
+				30713261902F24153C4108DD /* Pods-MirrorableHRTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		EA69C2B72203E118003028E2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				EA69C2BB2203E15A003028E2 /* HealthKit.framework */,
+				EA69C2B82203E118003028E2 /* HealthKit.framework */,
+				169AB0AEAA368A2DB5B3B428 /* Pods_MirrorableHR.framework */,
+				1C54246D969BBCF5CD96FC95 /* Pods_MirrorableHR_WatchKit_App.framework */,
+				EB2A4D970EEDE125160A598A /* Pods_MirrorableHR_WatchKit_Extension.framework */,
+				44D9B16AA59BC7DB725A9311 /* Pods_MirrorableHRTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		EAFF22752203E08E0084F0C8 = {
+			isa = PBXGroup;
+			children = (
+				EAFF22802203E08E0084F0C8 /* MirrorableHR */,
+				EAFF22952203E0900084F0C8 /* MirrorableHRTests */,
+				EAFF229F2203E0900084F0C8 /* MirrorableHR WatchKit App */,
+				EAFF22AE2203E0900084F0C8 /* MirrorableHR WatchKit Extension */,
+				EAFF227F2203E08E0084F0C8 /* Products */,
+				EA69C2B72203E118003028E2 /* Frameworks */,
+				9BB1BCC11B7724D9E8671ABA /* Pods */,
+			);
+			sourceTree = "<group>";
+		};
+		EAFF227F2203E08E0084F0C8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EAFF227E2203E08E0084F0C8 /* MirrorableHR.app */,
+				EAFF22922203E0900084F0C8 /* MirrorableHRTests.xctest */,
+				EAFF229B2203E0900084F0C8 /* MirrorableHR WatchKit App.app */,
+				EAFF22AA2203E0900084F0C8 /* MirrorableHR WatchKit Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EAFF22802203E08E0084F0C8 /* MirrorableHR */ = {
+			isa = PBXGroup;
+			children = (
+				EA69C2B62203E118003028E2 /* MirrorableHR.entitlements */,
+				EAFF22812203E08E0084F0C8 /* AppDelegate.swift */,
+				EA69C2BD2203E21C003028E2 /* TableViewController.swift */,
+				EAFF22852203E08E0084F0C8 /* Main.storyboard */,
+				EAFF22882203E0900084F0C8 /* Assets.xcassets */,
+				EAFF228A2203E0900084F0C8 /* LaunchScreen.storyboard */,
+				EAFF228D2203E0900084F0C8 /* Info.plist */,
+			);
+			path = MirrorableHR;
+			sourceTree = "<group>";
+		};
+		EAFF22952203E0900084F0C8 /* MirrorableHRTests */ = {
+			isa = PBXGroup;
+			children = (
+				EAFF22962203E0900084F0C8 /* MirrorableHRTests.swift */,
+				EAFF22982203E0900084F0C8 /* Info.plist */,
+			);
+			path = MirrorableHRTests;
+			sourceTree = "<group>";
+		};
+		EAFF229F2203E0900084F0C8 /* MirrorableHR WatchKit App */ = {
+			isa = PBXGroup;
+			children = (
+				EAFF22A02203E0900084F0C8 /* Interface.storyboard */,
+				EAFF22A32203E0900084F0C8 /* Assets.xcassets */,
+				EAFF22A52203E0900084F0C8 /* Info.plist */,
+			);
+			path = "MirrorableHR WatchKit App";
+			sourceTree = "<group>";
+		};
+		EAFF22AE2203E0900084F0C8 /* MirrorableHR WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				EA69C2BA2203E15A003028E2 /* MirrorableHR WatchKit Extension.entitlements */,
+				EAFF22AF2203E0900084F0C8 /* InterfaceController.swift */,
+				EAFF22B12203E0900084F0C8 /* ExtensionDelegate.swift */,
+				EAFF22B32203E0910084F0C8 /* Assets.xcassets */,
+				EAFF22B52203E0910084F0C8 /* Info.plist */,
+			);
+			path = "MirrorableHR WatchKit Extension";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		EAFF227D2203E08E0084F0C8 /* MirrorableHR */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EAFF22C02203E0910084F0C8 /* Build configuration list for PBXNativeTarget "MirrorableHR" */;
+			buildPhases = (
+				0DFF4CB087E08F6AEF52D670 /* [CP] Check Pods Manifest.lock */,
+				EAFF227A2203E08E0084F0C8 /* Sources */,
+				EAFF227B2203E08E0084F0C8 /* Frameworks */,
+				EAFF227C2203E08E0084F0C8 /* Resources */,
+				EAFF22BF2203E0910084F0C8 /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EAFF229E2203E0900084F0C8 /* PBXTargetDependency */,
+			);
+			name = MirrorableHR;
+			productName = MirrorableHR;
+			productReference = EAFF227E2203E08E0084F0C8 /* MirrorableHR.app */;
+			productType = "com.apple.product-type.application";
+		};
+		EAFF22912203E0900084F0C8 /* MirrorableHRTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EAFF22C32203E0910084F0C8 /* Build configuration list for PBXNativeTarget "MirrorableHRTests" */;
+			buildPhases = (
+				BFA307FF5CEE20F804767395 /* [CP] Check Pods Manifest.lock */,
+				EAFF228E2203E0900084F0C8 /* Sources */,
+				EAFF228F2203E0900084F0C8 /* Frameworks */,
+				EAFF22902203E0900084F0C8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EAFF22942203E0900084F0C8 /* PBXTargetDependency */,
+			);
+			name = MirrorableHRTests;
+			productName = MirrorableHRTests;
+			productReference = EAFF22922203E0900084F0C8 /* MirrorableHRTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		EAFF229A2203E0900084F0C8 /* MirrorableHR WatchKit App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EAFF22BC2203E0910084F0C8 /* Build configuration list for PBXNativeTarget "MirrorableHR WatchKit App" */;
+			buildPhases = (
+				980B98295152FB439A0627FE /* [CP] Check Pods Manifest.lock */,
+				EAFF22992203E0900084F0C8 /* Resources */,
+				EAFF22BB2203E0910084F0C8 /* Embed App Extensions */,
+				F5A9F62C2746314B5C9A389B /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EAFF22AD2203E0900084F0C8 /* PBXTargetDependency */,
+			);
+			name = "MirrorableHR WatchKit App";
+			productName = "MirrorableHR WatchKit App";
+			productReference = EAFF229B2203E0900084F0C8 /* MirrorableHR WatchKit App.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		EAFF22A92203E0900084F0C8 /* MirrorableHR WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EAFF22B82203E0910084F0C8 /* Build configuration list for PBXNativeTarget "MirrorableHR WatchKit Extension" */;
+			buildPhases = (
+				74EEF3A250EF734A7F1FFFAC /* [CP] Check Pods Manifest.lock */,
+				EAFF22A62203E0900084F0C8 /* Sources */,
+				EAFF22A72203E0900084F0C8 /* Frameworks */,
+				EAFF22A82203E0900084F0C8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "MirrorableHR WatchKit Extension";
+			productName = "MirrorableHR WatchKit Extension";
+			productReference = EAFF22AA2203E0900084F0C8 /* MirrorableHR WatchKit Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EAFF22762203E08E0084F0C8 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1010;
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = "Jacopo Mangiavacchi";
+				TargetAttributes = {
+					EAFF227D2203E08E0084F0C8 = {
+						CreatedOnToolsVersion = 10.1;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 0;
+							};
+							com.apple.HealthKit = {
+								enabled = 1;
+							};
+						};
+					};
+					EAFF22912203E0900084F0C8 = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = EAFF227D2203E08E0084F0C8;
+					};
+					EAFF229A2203E0900084F0C8 = {
+						CreatedOnToolsVersion = 10.1;
+					};
+					EAFF22A92203E0900084F0C8 = {
+						CreatedOnToolsVersion = 10.1;
+						SystemCapabilities = {
+							com.apple.BackgroundModes.watchos.extension = {
+								enabled = 1;
+							};
+							com.apple.HealthKit.watchos = {
+								enabled = 1;
+							};
+						};
+					};
+				};
+			};
+			buildConfigurationList = EAFF22792203E08E0084F0C8 /* Build configuration list for PBXProject "MirrorableHR" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = EAFF22752203E08E0084F0C8;
+			productRefGroup = EAFF227F2203E08E0084F0C8 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EAFF227D2203E08E0084F0C8 /* MirrorableHR */,
+				EAFF22912203E0900084F0C8 /* MirrorableHRTests */,
+				EAFF229A2203E0900084F0C8 /* MirrorableHR WatchKit App */,
+				EAFF22A92203E0900084F0C8 /* MirrorableHR WatchKit Extension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		EAFF227C2203E08E0084F0C8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EAFF228C2203E0900084F0C8 /* LaunchScreen.storyboard in Resources */,
+				EAFF22892203E0900084F0C8 /* Assets.xcassets in Resources */,
+				EAFF22872203E08E0084F0C8 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EAFF22902203E0900084F0C8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EAFF22992203E0900084F0C8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EAFF22A42203E0900084F0C8 /* Assets.xcassets in Resources */,
+				EAFF22A22203E0900084F0C8 /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EAFF22A82203E0900084F0C8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EAFF22B42203E0910084F0C8 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0DFF4CB087E08F6AEF52D670 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MirrorableHR-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		74EEF3A250EF734A7F1FFFAC /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MirrorableHR WatchKit Extension-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		980B98295152FB439A0627FE /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MirrorableHR WatchKit App-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BFA307FF5CEE20F804767395 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MirrorableHRTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EAFF227A2203E08E0084F0C8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EAFF22822203E08E0084F0C8 /* AppDelegate.swift in Sources */,
+				EA69C2BE2203E21D003028E2 /* TableViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EAFF228E2203E0900084F0C8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EAFF22972203E0900084F0C8 /* MirrorableHRTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EAFF22A62203E0900084F0C8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EAFF22B22203E0900084F0C8 /* ExtensionDelegate.swift in Sources */,
+				EAFF22B02203E0900084F0C8 /* InterfaceController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		EAFF22942203E0900084F0C8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EAFF227D2203E08E0084F0C8 /* MirrorableHR */;
+			targetProxy = EAFF22932203E0900084F0C8 /* PBXContainerItemProxy */;
+		};
+		EAFF229E2203E0900084F0C8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EAFF229A2203E0900084F0C8 /* MirrorableHR WatchKit App */;
+			targetProxy = EAFF229D2203E0900084F0C8 /* PBXContainerItemProxy */;
+		};
+		EAFF22AD2203E0900084F0C8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EAFF22A92203E0900084F0C8 /* MirrorableHR WatchKit Extension */;
+			targetProxy = EAFF22AC2203E0900084F0C8 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		EAFF22852203E08E0084F0C8 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EAFF22862203E08E0084F0C8 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		EAFF228A2203E0900084F0C8 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EAFF228B2203E0900084F0C8 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		EAFF22A02203E0900084F0C8 /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EAFF22A12203E0900084F0C8 /* Base */,
+			);
+			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		EAFF22B62203E0910084F0C8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		EAFF22B72203E0910084F0C8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		EAFF22B92203E0910084F0C8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6BDD247AEA76D55C9869AFD9 /* Pods-MirrorableHR WatchKit Extension.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_ENTITLEMENTS = "MirrorableHR WatchKit Extension/MirrorableHR WatchKit Extension.entitlements";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = SV6W498A95;
+				INFOPLIST_FILE = "MirrorableHR WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.jacopomangiavacchi.MirrorAbleHR.watchApp.watchAppExtension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 5.1;
+			};
+			name = Debug;
+		};
+		EAFF22BA2203E0910084F0C8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CF1FBFE0174CAA98179837AE /* Pods-MirrorableHR WatchKit Extension.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_ENTITLEMENTS = "MirrorableHR WatchKit Extension/MirrorableHR WatchKit Extension.entitlements";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = SV6W498A95;
+				INFOPLIST_FILE = "MirrorableHR WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.jacopomangiavacchi.MirrorAbleHR.watchApp.watchAppExtension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 5.1;
+			};
+			name = Release;
+		};
+		EAFF22BD2203E0910084F0C8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3298E0D6864251B9E14625FD /* Pods-MirrorableHR WatchKit App.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = SV6W498A95;
+				IBSC_MODULE = MirrorableHR_WatchKit_Extension;
+				INFOPLIST_FILE = "MirrorableHR WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = com.jacopomangiavacchi.MirrorAbleHR.watchApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 5.1;
+			};
+			name = Debug;
+		};
+		EAFF22BE2203E0910084F0C8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B4412343534BA5014AC85A67 /* Pods-MirrorableHR WatchKit App.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = SV6W498A95;
+				IBSC_MODULE = MirrorableHR_WatchKit_Extension;
+				INFOPLIST_FILE = "MirrorableHR WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = com.jacopomangiavacchi.MirrorAbleHR.watchApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 5.1;
+			};
+			name = Release;
+		};
+		EAFF22C12203E0910084F0C8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D5B4590A2858F7877E3C7649 /* Pods-MirrorableHR.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = MirrorableHR/MirrorableHR.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = SV6W498A95;
+				INFOPLIST_FILE = MirrorableHR/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.jacopomangiavacchi.MirrorAbleHR;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		EAFF22C22203E0910084F0C8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5A40B0496B85008E720DE22A /* Pods-MirrorableHR.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = MirrorableHR/MirrorableHR.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = SV6W498A95;
+				INFOPLIST_FILE = MirrorableHR/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.jacopomangiavacchi.MirrorAbleHR;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		EAFF22C42203E0910084F0C8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AA1F0697EC812250A4C127DB /* Pods-MirrorableHRTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = SV6W498A95;
+				INFOPLIST_FILE = MirrorableHRTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.jacopomangiavacchi.MirrorableHRTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MirrorableHR.app/MirrorableHR";
+			};
+			name = Debug;
+		};
+		EAFF22C52203E0910084F0C8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 30713261902F24153C4108DD /* Pods-MirrorableHRTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = SV6W498A95;
+				INFOPLIST_FILE = MirrorableHRTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.jacopomangiavacchi.MirrorableHRTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MirrorableHR.app/MirrorableHR";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		EAFF22792203E08E0084F0C8 /* Build configuration list for PBXProject "MirrorableHR" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EAFF22B62203E0910084F0C8 /* Debug */,
+				EAFF22B72203E0910084F0C8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EAFF22B82203E0910084F0C8 /* Build configuration list for PBXNativeTarget "MirrorableHR WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EAFF22B92203E0910084F0C8 /* Debug */,
+				EAFF22BA2203E0910084F0C8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EAFF22BC2203E0910084F0C8 /* Build configuration list for PBXNativeTarget "MirrorableHR WatchKit App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EAFF22BD2203E0910084F0C8 /* Debug */,
+				EAFF22BE2203E0910084F0C8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EAFF22C02203E0910084F0C8 /* Build configuration list for PBXNativeTarget "MirrorableHR" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EAFF22C12203E0910084F0C8 /* Debug */,
+				EAFF22C22203E0910084F0C8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EAFF22C32203E0910084F0C8 /* Build configuration list for PBXNativeTarget "MirrorableHRTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EAFF22C42203E0910084F0C8 /* Debug */,
+				EAFF22C52203E0910084F0C8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = EAFF22762203E08E0084F0C8 /* Project object */;
+}
