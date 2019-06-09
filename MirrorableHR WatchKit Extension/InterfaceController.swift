@@ -25,6 +25,7 @@ class InterfaceController: WKInterfaceController {
     let heartRateUnit = HKUnit(from: "count/min")
     var heartRateQuery : HKQuery?
     var wcSession : WCSession!
+    let csvFileUrl = URL(fileURLWithPath: NSTemporaryDirectory()).appendingPathComponent("motion.csv")
 
     @IBOutlet private weak var startStopButton : WKInterfaceButton!
     @IBOutlet private weak var heartRatelabel: WKInterfaceLabel!
@@ -93,6 +94,9 @@ class InterfaceController: WKInterfaceController {
         wcSession.sendMessage(["message":"Alert from Watch"], replyHandler: nil, errorHandler: nil)
     }
     
+    @IBAction func sendFile() {
+    }
+    
     func stopWorkout() {
         self.workoutSession?.end()
         
@@ -101,9 +105,20 @@ class InterfaceController: WKInterfaceController {
         }
     }
     
+    func deleteFile() {
+        do {
+            try FileManager.default.removeItem(at: csvFileUrl)
+        }
+        catch let error as NSError {
+            print("\(error)")
+        }
+    }
+    
     func startWorkout() {
         guard workoutSession == nil else { return }
         
+        deleteFile()
+
         let workoutConfiguration = HKWorkoutConfiguration()
         workoutConfiguration.activityType = .other
         
@@ -133,25 +148,32 @@ class InterfaceController: WKInterfaceController {
     }
     
     func processDeviceMotion(_ deviceMotion: CMDeviceMotion) {
-        let accelleration = deviceMotion.userAcceleration
-        let rotationRate = deviceMotion.rotationRate
-        let gravity = deviceMotion.gravity
         let time = deviceMotion.timestamp
+        let accelleration = deviceMotion.userAcceleration
+//        let rotationRate = deviceMotion.rotationRate
+//        let gravity = deviceMotion.gravity
+//
+//        let vector = [time,
+//                      accelleration.x,
+//                      accelleration.y,
+//                      accelleration.z,
+//                      rotationRate.x,
+//                      rotationRate.y,
+//                      rotationRate.z,
+//                      gravity.x,
+//                      gravity.y,
+//                      gravity.z,
+//                     ]
+//
+//        print(vector)
+
+        let csvText = "\(time),\(accelleration.x),\(accelleration.y),\(accelleration.z)"
         
-        let vector = [time,
-                      accelleration.x,
-                      accelleration.y,
-                      accelleration.z,
-                      rotationRate.x,
-                      rotationRate.y,
-                      rotationRate.z,
-                      gravity.x,
-                      gravity.y,
-                      gravity.z,
-                     ]
-        
-        print(vector)
-        // TODO: Log gravity && rotationRate
+        do {
+            try csvText.write(to: csvFileUrl, atomically: true, encoding: String.Encoding.utf8)
+        } catch {
+            print("Failed to write file \(error)")
+        }
     }
     
     func getQuery(date: Date, identifier: HKQuantityTypeIdentifier) -> HKQuery? {
