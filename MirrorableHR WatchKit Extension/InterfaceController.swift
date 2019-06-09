@@ -9,6 +9,7 @@
 import WatchKit
 import Foundation
 import HealthKit
+import CoreMotion
 import WatchConnectivity
 
 class InterfaceController: WKInterfaceController {
@@ -17,6 +18,10 @@ class InterfaceController: WKInterfaceController {
     let healthStore = HKHealthStore()
     var workoutActive = false
     var workoutSession : HKWorkoutSession?
+    let queue = OperationQueue()
+    let motionManager = CMMotionManager()
+    // The app is using 50hz data and the buffer is going to hold 1s worth of data.
+    let sampleInterval = 1.0 / 50
     let heartRateUnit = HKUnit(from: "count/min")
     var heartRateQuery : HKQuery?
     var wcSession : WCSession!
@@ -76,7 +81,7 @@ class InterfaceController: WKInterfaceController {
         if (self.workoutActive) {
             self.workoutActive = false
             self.startStopButton.setTitle("Start")
-            self.workoutSession?.end()
+            stopWorkout()
         } else {
             self.workoutActive = true
             self.startStopButton.setTitle("Stop")
@@ -86,6 +91,14 @@ class InterfaceController: WKInterfaceController {
     
     @IBAction func sendAlert() {
         wcSession.sendMessage(["message":"Alert from Watch"], replyHandler: nil, errorHandler: nil)
+    }
+    
+    func stopWorkout() {
+        self.workoutSession?.end()
+        
+        if motionManager.isDeviceMotionAvailable {
+            motionManager.stopDeviceMotionUpdates()
+        }
     }
     
     func startWorkout() {
@@ -101,6 +114,44 @@ class InterfaceController: WKInterfaceController {
         }
         
         self.workoutSession?.startActivity(with: nil)
+        
+        if !motionManager.isDeviceMotionAvailable {
+            print("Device Motion is not available.")
+            return
+        }
+
+        motionManager.deviceMotionUpdateInterval = sampleInterval
+        motionManager.startDeviceMotionUpdates(to: queue) { (deviceMotion: CMDeviceMotion?, error: Error?) in
+            if error != nil {
+                print("Encountered error: \(error!)")
+            }
+            
+            if deviceMotion != nil {
+                self.processDeviceMotion(deviceMotion!)
+            }
+        }
+    }
+    
+    func processDeviceMotion(_ deviceMotion: CMDeviceMotion) {
+        let accelleration = deviceMotion.userAcceleration
+        let rotationRate = deviceMotion.rotationRate
+        let gravity = deviceMotion.gravity
+        let time = deviceMotion.timestamp
+        
+        let vector = [time,
+                      accelleration.x,
+                      accelleration.y,
+                      accelleration.z,
+                      rotationRate.x,
+                      rotationRate.y,
+                      rotationRate.z,
+                      gravity.x,
+                      gravity.y,
+                      gravity.z,
+                     ]
+        
+        print(vector)
+        // TODO: Log gravity && rotationRate
     }
     
     func getQuery(date: Date, identifier: HKQuantityTypeIdentifier) -> HKQuery? {
