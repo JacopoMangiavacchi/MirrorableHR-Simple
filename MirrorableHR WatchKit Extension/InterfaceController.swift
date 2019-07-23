@@ -14,6 +14,8 @@ import WatchConnectivity
 
 class InterfaceController: WKInterfaceController {
     
+    typealias HKQueryUpdateHandler = ((HKAnchoredObjectQuery, [HKSample]?, [HKDeletedObject]?, HKQueryAnchor?, Error?) -> Swift.Void)
+
     var authorized = false
     let healthStore = HKHealthStore()
     var workoutActive = false
@@ -22,14 +24,17 @@ class InterfaceController: WKInterfaceController {
     let motionManager = CMMotionManager()
     // The app is using 50hz data and the buffer is going to hold 1s worth of data.
     let sampleInterval = 1.0 / 50
-    let heartRateUnit = HKUnit(from: "count/min")
     var heartRateQuery : HKQuery?
     var wcSession : WCSession!
     let csvFileUrl = URL(fileURLWithPath: NSTemporaryDirectory()).appendingPathComponent("motion.csv")
+    
+    var heartRateSamples = [Double]()
 
     @IBOutlet private weak var startStopButton : WKInterfaceButton!
-    @IBOutlet private weak var heartRatelabel: WKInterfaceLabel!
-
+    @IBOutlet private weak var hrLabel: WKInterfaceLabel!
+    @IBOutlet weak var hrvLabel: WKInterfaceLabel!
+    @IBOutlet weak var motionLabel: WKInterfaceLabel!
+    
     override func awake(withContext context: Any?) {
         super.willActivate()
         
@@ -71,11 +76,11 @@ class InterfaceController: WKInterfaceController {
     }
     
     func displayNotAvailable() {
-        heartRatelabel.setText("N/A")
+        hrLabel.setText("N/A")
     }
     
     func displayNotAllowed() {
-        heartRatelabel.setText("n/a")
+        hrLabel.setText("n/a")
     }
     
     @IBAction func startStopSession() {
@@ -117,11 +122,13 @@ class InterfaceController: WKInterfaceController {
     func startWorkout() {
         guard workoutSession == nil else { return }
         
+        heartRateSamples.removeAll()
         deleteFile()
 
         let workoutConfiguration = HKWorkoutConfiguration()
-        workoutConfiguration.activityType = .other
-        
+        workoutConfiguration.activityType = .mindAndBody
+        workoutConfiguration.locationType = .unknown
+
         do {
             workoutSession = try HKWorkoutSession(healthStore: healthStore, configuration: workoutConfiguration)
             workoutSession?.delegate = self
@@ -167,7 +174,18 @@ class InterfaceController: WKInterfaceController {
 //
 //        print(vector)
 
-        let csvText = "\(time),\(accelleration.x),\(accelleration.y),\(accelleration.z)"
+//        let csvText = "\(time),\(accelleration.x),\(accelleration.y),\(accelleration.z)"
+
+        var motion = abs(accelleration.x) + abs(accelleration.y) + abs(accelleration.z)
+        motion = motion / 3
+        motion = Double(round(100*motion)/100)
+
+        DispatchQueue.main.async {
+            self.motionLabel.setText(String(format: "%.1f", motion))
+        }
+
+        let csvText = "\(time),\(motion)"
+
         
         do {
             try csvText.write(to: csvFileUrl, atomically: true, encoding: String.Encoding.utf8)
@@ -179,35 +197,57 @@ class InterfaceController: WKInterfaceController {
     func getQuery(date: Date, identifier: HKQuantityTypeIdentifier) -> HKQuery? {
         guard let quantityType = HKObjectType.quantityType(forIdentifier: identifier) else { return nil }
         
-        let datePredicate = HKQuery.predicateForSamples(withStart: date, end: nil, options: .strictEndDate )
-        //let devicePredicate = HKQuery.predicateForObjects(from: [HKDevice.local()])
-        let predicate = NSCompoundPredicate(andPredicateWithSubpredicates:[datePredicate])
+        let datePredicate = HKQuery.predicateForSamples(withStart: date, end: nil, options: .strictStartDate )
+        let devicePredicate = HKQuery.predicateForObjects(from: [HKDevice.local()])
+        let queryPredicate = NSCompoundPredicate(andPredicateWithSubpredicates:[datePredicate, devicePredicate])
         
-        let query = HKAnchoredObjectQuery(type: quantityType, predicate: predicate, anchor: nil, limit: Int(HKObjectQueryNoLimit)) { (query, samples, deletedObjects, newAnchor, error) -> Void in
-            self.processSamples(samples)
+        let updateHandler: HKQueryUpdateHandler =
+        { query, samples, deletedObjects, queryAnchor, error in
+            
+            if let quantitySamples = samples as? [HKQuantitySample] {
+                self.processSamples(quantitySamples)
+            }
         }
         
-        query.updateHandler = {(query, samples, deleteObjects, newAnchor, error) -> Void in
-            self.processSamples(samples)
-        }
+        let query = HKAnchoredObjectQuery(type: quantityType, predicate: queryPredicate, anchor: nil, limit: HKObjectQueryNoLimit, resultsHandler: updateHandler)
+        
+        query.updateHandler = updateHandler
+        
         return query
     }
     
-    func processSamples(_ samples: [HKSample]?) {
-        guard let heartRateSamples = samples as? [HKQuantitySample] else { return }
+    func processSamples(_ samples: [HKQuantitySample]?) {
         guard let heartRateQuantityType = HKObjectType.quantityType(forIdentifier: HKQuantityTypeIdentifier.heartRate) else { return }
         
-        DispatchQueue.main.async {
-            guard let sample = heartRateSamples.first else { return }
+        samples?.forEach { sample in
             switch sample.quantityType {
             case heartRateQuantityType:
-                let value = sample.quantity.doubleValue(for: self.heartRateUnit)
-                self.heartRatelabel.setText(String(format: "%.1f", value))
-                break
+                let heartRate = sample.quantity.doubleValue(for: HKUnit(from: "count/s"))
+                let heartRateVariability = hrvSDNN(heartRate)
+                
+                DispatchQueue.main.async {
+                    self.hrLabel.setText(String(format: "%.0f", heartRate * 60)) //Heart beat per Minute
+                    
+                    if(self.heartRateSamples.count > 2) {
+                        self.hrvLabel.setText(String(format: "%.0f", heartRateVariability))
+                    }
+                }
+
             default:
                 break
             }
         }
+    }
+    
+    func hrvSDNN(_ value: Double) -> Double
+    {
+        self.heartRateSamples.append(1000 / value)
+        
+        let count = Double(self.heartRateSamples.count)
+        let avg = self.heartRateSamples.reduce(0, +) / count
+        let sumOfSquaredAvgDiff = self.heartRateSamples.map{ pow($0 - avg, 2.0) }.reduce(0, +)
+        
+        return sqrt(sumOfSquaredAvgDiff / count)
     }
 }
 
@@ -229,12 +269,12 @@ extension InterfaceController: HKWorkoutSessionDelegate {
     
     
     func workoutDidStart(_ date : Date) {
-        heartRatelabel.setText("-")
+        hrLabel.setText("-")
         if let query = getQuery(date: date, identifier: HKQuantityTypeIdentifier.heartRate) {
             self.heartRateQuery = query
             healthStore.execute(query)
         } else {
-            heartRatelabel.setText("/")
+            hrLabel.setText("/")
         }
     }
     
