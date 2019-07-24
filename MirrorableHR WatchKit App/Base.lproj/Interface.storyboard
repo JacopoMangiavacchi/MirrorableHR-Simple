@@ -18,11 +18,14 @@
                             <items>
                                 <group width="0.45000000000000001" height="1" alignment="left" layout="vertical" id="ujy-xT-6nV">
                                     <items>
-                                        <label alignment="center" text="HR" textAlignment="center" id="2j5-nf-yKF">
-                                            <fontDescription key="font" style="UICTFontTextStyleHeadline"/>
+                                        <label height="0.29999999999999999" alignment="center" text="-" textAlignment="center" minimumScaleFactor="0.5" id="lrv-DZ-crr">
+                                            <fontDescription key="font" name="ArialHebrew-Bold" family="Arial Hebrew" pointSize="14"/>
                                         </label>
-                                        <label alignment="center" text="-" textAlignment="center" minimumScaleFactor="0.5" id="lrv-DZ-crr">
-                                            <fontDescription key="font" name="ArialHebrew-Bold" family="Arial Hebrew" pointSize="34"/>
+                                        <label height="0.29999999999999999" alignment="center" text="-" textAlignment="center" minimumScaleFactor="0.5" id="eLr-po-IIA">
+                                            <fontDescription key="font" name="ArialHebrew-Bold" family="Arial Hebrew" pointSize="14"/>
+                                        </label>
+                                        <label height="0.29999999999999999" alignment="center" text="-" textAlignment="center" minimumScaleFactor="0.5" id="V6a-Cb-EhI">
+                                            <fontDescription key="font" name="ArialHebrew-Bold" family="Arial Hebrew" pointSize="14"/>
                                         </label>
                                     </items>
                                     <edgeInsets key="margins" left="4" right="0.0" top="14" bottom="0.0"/>
@@ -56,7 +59,9 @@
                         </button>
                     </items>
                     <connections>
-                        <outlet property="heartRatelabel" destination="lrv-DZ-crr" id="uD9-jK-UAI"/>
+                        <outlet property="hrLabel" destination="lrv-DZ-crr" id="uD9-jK-UAI"/>
+                        <outlet property="hrvLabel" destination="eLr-po-IIA" id="msY-fo-R7u"/>
+                        <outlet property="motionLabel" destination="V6a-Cb-EhI" id="3hh-uK-HNs"/>
                         <outlet property="startStopButton" destination="94H-rT-qo5" id="Ubu-ap-g8N"/>
                     </connections>
                 </controller>

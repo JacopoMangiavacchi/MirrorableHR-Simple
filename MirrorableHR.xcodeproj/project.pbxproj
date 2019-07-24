@@ -10,6 +10,7 @@
 		2588CE90745FAF0DFF6AD803 /* Pods_MirrorableHRTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 44D9B16AA59BC7DB725A9311 /* Pods_MirrorableHRTests.framework */; };
 		A409C7849169DA0D9797D4FC /* Pods_MirrorableHR_WatchKit_App.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1C54246D969BBCF5CD96FC95 /* Pods_MirrorableHR_WatchKit_App.framework */; };
 		CAF64923CD89466710943B32 /* Pods_MirrorableHR_WatchKit_Extension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB2A4D970EEDE125160A598A /* Pods_MirrorableHR_WatchKit_Extension.framework */; };
+		EA378D7122E7ECDF006E1682 /* Hrv.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA378D7022E7ECDF006E1682 /* Hrv.swift */; };
 		EA69C2B92203E118003028E2 /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EA69C2B82203E118003028E2 /* HealthKit.framework */; };
 		EA69C2BC2203E15A003028E2 /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EA69C2BB2203E15A003028E2 /* HealthKit.framework */; };
 		EA69C2BE2203E21D003028E2 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA69C2BD2203E21C003028E2 /* TableViewController.swift */; };
@@ -89,6 +90,7 @@
 		B4412343534BA5014AC85A67 /* Pods-MirrorableHR WatchKit App.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MirrorableHR WatchKit App.release.xcconfig"; path = "Pods/Target Support Files/Pods-MirrorableHR WatchKit App/Pods-MirrorableHR WatchKit App.release.xcconfig"; sourceTree = "<group>"; };
 		CF1FBFE0174CAA98179837AE /* Pods-MirrorableHR WatchKit Extension.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MirrorableHR WatchKit Extension.release.xcconfig"; path = "Pods/Target Support Files/Pods-MirrorableHR WatchKit Extension/Pods-MirrorableHR WatchKit Extension.release.xcconfig"; sourceTree = "<group>"; };
 		D5B4590A2858F7877E3C7649 /* Pods-MirrorableHR.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MirrorableHR.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MirrorableHR/Pods-MirrorableHR.debug.xcconfig"; sourceTree = "<group>"; };
+		EA378D7022E7ECDF006E1682 /* Hrv.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Hrv.swift; sourceTree = "<group>"; };
 		EA69C2B62203E118003028E2 /* MirrorableHR.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = MirrorableHR.entitlements; sourceTree = "<group>"; };
 		EA69C2B82203E118003028E2 /* HealthKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HealthKit.framework; path = System/Library/Frameworks/HealthKit.framework; sourceTree = SDKROOT; };
 		EA69C2BA2203E15A003028E2 /* MirrorableHR WatchKit Extension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "MirrorableHR WatchKit Extension.entitlements"; sourceTree = "<group>"; };
@@ -242,6 +244,7 @@
 			isa = PBXGroup;
 			children = (
 				EA69C2BA2203E15A003028E2 /* MirrorableHR WatchKit Extension.entitlements */,
+				EA378D7022E7ECDF006E1682 /* Hrv.swift */,
 				EAFF22AF2203E0900084F0C8 /* InterfaceController.swift */,
 				EAFF22B12203E0900084F0C8 /* ExtensionDelegate.swift */,
 				EAFF22B32203E0910084F0C8 /* Assets.xcassets */,
@@ -543,6 +546,7 @@
 			files = (
 				EAFF22B22203E0900084F0C8 /* ExtensionDelegate.swift in Sources */,
 				EAFF22B02203E0900084F0C8 /* InterfaceController.swift in Sources */,
+				EA378D7122E7ECDF006E1682 /* Hrv.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
