@@ -23,12 +23,12 @@ class InterfaceController: WKInterfaceController {
     let queue = OperationQueue()
     let motionManager = CMMotionManager()
     // The app is using 50hz data and the buffer is going to hold 1s worth of data.
-    let sampleInterval = 1.0 / 50
+    let sampleInterval = 1.0 / 50 // Parametrize this in settings !!
     var heartRateQuery : HKQuery?
     var wcSession : WCSession!
     let csvFileUrl = URL(fileURLWithPath: NSTemporaryDirectory()).appendingPathComponent("motion.csv")
     
-    var heartRateSamples = [Double]()
+    var hrv = Hrv(size: 50) // Parametrize this in settings !!
 
     @IBOutlet private weak var startStopButton : WKInterfaceButton!
     @IBOutlet private weak var hrLabel: WKInterfaceLabel!
@@ -122,7 +122,7 @@ class InterfaceController: WKInterfaceController {
     func startWorkout() {
         guard workoutSession == nil else { return }
         
-        heartRateSamples.removeAll()
+        hrv.reset()
         deleteFile()
 
         let workoutConfiguration = HKWorkoutConfiguration()
@@ -184,14 +184,12 @@ class InterfaceController: WKInterfaceController {
             self.motionLabel.setText(String(format: "%.1f", motion))
         }
 
-        let csvText = "\(time),\(motion)"
-
-        
-        do {
-            try csvText.write(to: csvFileUrl, atomically: true, encoding: String.Encoding.utf8)
-        } catch {
-            print("Failed to write file \(error)")
-        }
+//        let csvText = "\(time),\(motion)"
+//        do {
+//            try csvText.write(to: csvFileUrl, atomically: true, encoding: String.Encoding.utf8)
+//        } catch {
+//            print("Failed to write file \(error)")
+//        }
     }
     
     func getQuery(date: Date, identifier: HKQuantityTypeIdentifier) -> HKQuery? {
@@ -222,32 +220,19 @@ class InterfaceController: WKInterfaceController {
         samples?.forEach { sample in
             switch sample.quantityType {
             case heartRateQuantityType:
-                let heartRate = sample.quantity.doubleValue(for: HKUnit(from: "count/s"))
-                let heartRateVariability = hrvSDNN(heartRate)
+                //Heart beat per Minute
+                let heartRate = 60.0 * sample.quantity.doubleValue(for: HKUnit(from: "count/s"))
+                let heartRateVariability = hrv.addSample(heartRate)
                 
                 DispatchQueue.main.async {
-                    self.hrLabel.setText(String(format: "%.0f", heartRate * 60)) //Heart beat per Minute
-                    
-                    if(self.heartRateSamples.count > 2) {
-                        self.hrvLabel.setText(String(format: "%.0f", heartRateVariability))
-                    }
+                    self.hrLabel.setText(String(format: "%.0f", heartRate))
+                    self.hrvLabel.setText(String(format: "%.1f", heartRateVariability))
                 }
 
             default:
                 break
             }
         }
-    }
-    
-    func hrvSDNN(_ value: Double) -> Double
-    {
-        self.heartRateSamples.append(1000 / value)
-        
-        let count = Double(self.heartRateSamples.count)
-        let avg = self.heartRateSamples.reduce(0, +) / count
-        let sumOfSquaredAvgDiff = self.heartRateSamples.map{ pow($0 - avg, 2.0) }.reduce(0, +)
-        
-        return sqrt(sumOfSquaredAvgDiff / count)
     }
 }
 
