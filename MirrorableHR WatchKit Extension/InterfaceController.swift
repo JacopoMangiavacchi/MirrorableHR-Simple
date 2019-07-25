@@ -29,6 +29,7 @@ class InterfaceController: WKInterfaceController {
     let csvFileUrl = URL(fileURLWithPath: NSTemporaryDirectory()).appendingPathComponent("motion.csv")
     
     var hrv = Hrv(size: 50) // Parametrize this in settings !!
+    var motion = Motion(size: 250) // Parametrize this in settings !!
 
     @IBOutlet private weak var startStopButton : WKInterfaceButton!
     @IBOutlet private weak var hrLabel: WKInterfaceLabel!
@@ -123,6 +124,7 @@ class InterfaceController: WKInterfaceController {
         guard workoutSession == nil else { return }
         
         hrv.reset()
+        motion.reset()
         deleteFile()
 
         let workoutConfiguration = HKWorkoutConfiguration()
@@ -155,33 +157,12 @@ class InterfaceController: WKInterfaceController {
     }
     
     func processDeviceMotion(_ deviceMotion: CMDeviceMotion) {
-        let time = deviceMotion.timestamp
         let accelleration = deviceMotion.userAcceleration
-//        let rotationRate = deviceMotion.rotationRate
-//        let gravity = deviceMotion.gravity
-//
-//        let vector = [time,
-//                      accelleration.x,
-//                      accelleration.y,
-//                      accelleration.z,
-//                      rotationRate.x,
-//                      rotationRate.y,
-//                      rotationRate.z,
-//                      gravity.x,
-//                      gravity.y,
-//                      gravity.z,
-//                     ]
-//
-//        print(vector)
 
-//        let csvText = "\(time),\(accelleration.x),\(accelleration.y),\(accelleration.z)"
-
-        var motion = abs(accelleration.x) + abs(accelleration.y) + abs(accelleration.z)
-        motion = motion / 3
-        motion = Double(round(100*motion)/100)
+        let m = motion.addSample(x: accelleration.x, y: accelleration.y, z:accelleration.z)
 
         DispatchQueue.main.async {
-            self.motionLabel.setText(String(format: "%.1f", motion))
+            self.motionLabel.setText(String(format: "%.1f", m))
         }
 
 //        let csvText = "\(time),\(motion)"

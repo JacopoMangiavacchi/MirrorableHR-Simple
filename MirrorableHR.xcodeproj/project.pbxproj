@@ -14,6 +14,7 @@
 		EA69C2B92203E118003028E2 /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EA69C2B82203E118003028E2 /* HealthKit.framework */; };
 		EA69C2BC2203E15A003028E2 /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EA69C2BB2203E15A003028E2 /* HealthKit.framework */; };
 		EA69C2BE2203E21D003028E2 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA69C2BD2203E21C003028E2 /* TableViewController.swift */; };
+		EAA5CED922E953FF00202F47 /* Motion.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAA5CED822E953FF00202F47 /* Motion.swift */; };
 		EAFF22822203E08E0084F0C8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAFF22812203E08E0084F0C8 /* AppDelegate.swift */; };
 		EAFF22872203E08E0084F0C8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EAFF22852203E08E0084F0C8 /* Main.storyboard */; };
 		EAFF22892203E0900084F0C8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EAFF22882203E0900084F0C8 /* Assets.xcassets */; };
@@ -96,6 +97,7 @@
 		EA69C2BA2203E15A003028E2 /* MirrorableHR WatchKit Extension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "MirrorableHR WatchKit Extension.entitlements"; sourceTree = "<group>"; };
 		EA69C2BB2203E15A003028E2 /* HealthKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HealthKit.framework; path = Platforms/WatchOS.platform/Developer/SDKs/WatchOS5.1.sdk/System/Library/Frameworks/HealthKit.framework; sourceTree = DEVELOPER_DIR; };
 		EA69C2BD2203E21C003028E2 /* TableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
+		EAA5CED822E953FF00202F47 /* Motion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Motion.swift; sourceTree = "<group>"; };
 		EAFF227E2203E08E0084F0C8 /* MirrorableHR.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MirrorableHR.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EAFF22812203E08E0084F0C8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EAFF22862203E08E0084F0C8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -245,6 +247,7 @@
 			children = (
 				EA69C2BA2203E15A003028E2 /* MirrorableHR WatchKit Extension.entitlements */,
 				EA378D7022E7ECDF006E1682 /* Hrv.swift */,
+				EAA5CED822E953FF00202F47 /* Motion.swift */,
 				EAFF22AF2203E0900084F0C8 /* InterfaceController.swift */,
 				EAFF22B12203E0900084F0C8 /* ExtensionDelegate.swift */,
 				EAFF22B32203E0910084F0C8 /* Assets.xcassets */,
@@ -545,6 +548,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				EAFF22B22203E0900084F0C8 /* ExtensionDelegate.swift in Sources */,
+				EAA5CED922E953FF00202F47 /* Motion.swift in Sources */,
 				EAFF22B02203E0900084F0C8 /* InterfaceController.swift in Sources */,
 				EA378D7122E7ECDF006E1682 /* Hrv.swift in Sources */,
 			);
