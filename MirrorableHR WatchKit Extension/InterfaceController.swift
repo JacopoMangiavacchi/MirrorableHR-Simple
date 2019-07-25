@@ -26,7 +26,6 @@ class InterfaceController: WKInterfaceController {
     let sampleInterval = 1.0 / 50 // Parametrize this in settings !!
     var heartRateQuery : HKQuery?
     var wcSession : WCSession!
-    let csvFileUrl = URL(fileURLWithPath: NSTemporaryDirectory()).appendingPathComponent("motion.csv")
     
     var hrv = Hrv(size: 50) // Parametrize this in settings !!
     var motion = Motion(size: 250) // Parametrize this in settings !!
@@ -42,12 +41,12 @@ class InterfaceController: WKInterfaceController {
         self.setTitle("MirrorHR")
         
         guard HKHealthStore.isHealthDataAvailable() == true else {
-            displayNotAvailable()
+            hrLabel.setText("N/A")
             return
         }
         
         guard let hrQuantityType = HKQuantityType.quantityType(forIdentifier: HKQuantityTypeIdentifier.heartRate) else {
-            displayNotAllowed()
+            hrLabel.setText("n/a")
             return
         }
         
@@ -57,7 +56,7 @@ class InterfaceController: WKInterfaceController {
                 self.authorized = true
             }
             else {
-                self.displayNotAllowed()
+                self.hrLabel.setText("n/a")
             }
         }
     }
@@ -76,32 +75,24 @@ class InterfaceController: WKInterfaceController {
         super.didDeactivate()
     }
     
-    func displayNotAvailable() {
-        hrLabel.setText("N/A")
-    }
-    
-    func displayNotAllowed() {
-        hrLabel.setText("n/a")
-    }
     
     @IBAction func startStopSession() {
         if (self.workoutActive) {
             self.workoutActive = false
             self.startStopButton.setTitle("Start")
+            self.startStopButton.setBackgroundColor(.green)
             stopWorkout()
         } else {
             self.workoutActive = true
             self.startStopButton.setTitle("Stop")
+            self.startStopButton.setBackgroundColor(.red)
             startWorkout()
         }
     }
     
-    @IBAction func sendAlert() {
-        wcSession.sendMessage(["message":"Alert from Watch"], replyHandler: nil, errorHandler: nil)
-    }
-    
-    @IBAction func sendFile() {
-    }
+//    @IBAction func sendAlert() {
+//        wcSession.sendMessage(["message":"Alert from Watch"], replyHandler: nil, errorHandler: nil)
+//    }
     
     func stopWorkout() {
         self.workoutSession?.end()
@@ -111,21 +102,11 @@ class InterfaceController: WKInterfaceController {
         }
     }
     
-    func deleteFile() {
-        do {
-            try FileManager.default.removeItem(at: csvFileUrl)
-        }
-        catch let error as NSError {
-            print("\(error)")
-        }
-    }
-    
     func startWorkout() {
         guard workoutSession == nil else { return }
         
         hrv.reset()
         motion.reset()
-        deleteFile()
 
         let workoutConfiguration = HKWorkoutConfiguration()
         workoutConfiguration.activityType = .mindAndBody
@@ -154,23 +135,6 @@ class InterfaceController: WKInterfaceController {
                 self.processDeviceMotion(deviceMotion!)
             }
         }
-    }
-    
-    func processDeviceMotion(_ deviceMotion: CMDeviceMotion) {
-        let accelleration = deviceMotion.userAcceleration
-
-        let m = motion.addSample(x: accelleration.x, y: accelleration.y, z:accelleration.z)
-
-        DispatchQueue.main.async {
-            self.motionLabel.setText(String(format: "%.1f", m))
-        }
-
-//        let csvText = "\(time),\(motion)"
-//        do {
-//            try csvText.write(to: csvFileUrl, atomically: true, encoding: String.Encoding.utf8)
-//        } catch {
-//            print("Failed to write file \(error)")
-//        }
     }
     
     func getQuery(date: Date, identifier: HKQuantityTypeIdentifier) -> HKQuery? {
@@ -213,6 +177,16 @@ class InterfaceController: WKInterfaceController {
             default:
                 break
             }
+        }
+    }
+    
+    func processDeviceMotion(_ deviceMotion: CMDeviceMotion) {
+        let accelleration = deviceMotion.userAcceleration
+        
+        let m = motion.addSample(x: accelleration.x, y: accelleration.y, z:accelleration.z)
+        
+        DispatchQueue.main.async {
+            self.motionLabel.setText(String(format: "%.1f", m))
         }
     }
 }
