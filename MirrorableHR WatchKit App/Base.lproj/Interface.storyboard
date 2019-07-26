@@ -22,7 +22,7 @@
                                             <fontDescription key="font" name="ArialHebrew-Bold" family="Arial Hebrew" pointSize="14"/>
                                         </label>
                                         <label width="0.5" height="1" alignment="center" text="BPM" textAlignment="center" minimumScaleFactor="0.5" id="Kyc-tb-5g8">
-                                            <fontDescription key="font" name="ArialHebrew-Bold" family="Arial Hebrew" pointSize="12"/>
+                                            <fontDescription key="font" name="ArialHebrew-Bold" family="Arial Hebrew" pointSize="14"/>
                                         </label>
                                     </items>
                                 </group>
@@ -32,7 +32,7 @@
                                             <fontDescription key="font" name="ArialHebrew-Bold" family="Arial Hebrew" pointSize="14"/>
                                         </label>
                                         <label width="0.5" height="1" alignment="center" text="HRV" textAlignment="center" minimumScaleFactor="0.5" id="Ihe-MO-9dl">
-                                            <fontDescription key="font" name="ArialHebrew-Bold" family="Arial Hebrew" pointSize="12"/>
+                                            <fontDescription key="font" name="ArialHebrew-Bold" family="Arial Hebrew" pointSize="14"/>
                                         </label>
                                     </items>
                                 </group>
@@ -42,7 +42,7 @@
                                             <fontDescription key="font" name="ArialHebrew-Bold" family="Arial Hebrew" pointSize="14"/>
                                         </label>
                                         <label width="0.5" height="1" alignment="center" text="MOV" textAlignment="center" minimumScaleFactor="0.5" id="aRc-k2-gex">
-                                            <fontDescription key="font" name="ArialHebrew-Bold" family="Arial Hebrew" pointSize="12"/>
+                                            <fontDescription key="font" name="ArialHebrew-Bold" family="Arial Hebrew" pointSize="14"/>
                                         </label>
                                     </items>
                                 </group>
@@ -50,7 +50,7 @@
                             <edgeInsets key="margins" left="4" right="0.0" top="14" bottom="0.0"/>
                         </group>
                         <button width="1" height="0.29999999999999999" alignment="left" title="Start" id="94H-rT-qo5">
-                            <color key="backgroundColor" red="0.0" green="0.56031829119999998" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <color key="backgroundColor" red="0.016804177310000001" green="0.19835099580000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             <connections>
                                 <action selector="startStopSession" destination="R4M-fS-wDQ" id="2Zc-ZG-qew"/>
                             </connections>

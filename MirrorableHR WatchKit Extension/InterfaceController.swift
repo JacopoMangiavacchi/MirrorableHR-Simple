@@ -75,12 +75,11 @@ class InterfaceController: WKInterfaceController {
         super.didDeactivate()
     }
     
-    
     @IBAction func startStopSession() {
         if (self.workoutActive) {
             self.workoutActive = false
             self.startStopButton.setTitle("Start")
-            self.startStopButton.setBackgroundColor(.green)
+            self.startStopButton.setBackgroundColor(.blue)
             stopWorkout()
         } else {
             self.workoutActive = true
