@@ -9,26 +9,26 @@
 import Foundation
 
 struct Motion {
-    private var samples: [Double]
-    private var size: Int
-    private var count: Int
-    private var full: Bool
+    static func simpleAverageFunction(_ samples: [Double]) -> Double {
+        let size = samples.count
+        let avg = samples.reduce(0.0, +) / Double(size)
+        return avg
+    }
     
-    private(set) var average: Double
+    private var ringAverage: RingAverage
+    
+    var average: Double {
+        get {
+            return ringAverage.average
+        }
+    }
     
     init(size: Int = 250) { // 5 secs
-        self.average = 0.0
-        self.count = 0
-        self.full = false
-        self.size = size
-        samples = [Double].init(repeating: 0.0, count: size)
+        self.ringAverage = RingAverage(size: size, averageFunc: Motion.simpleAverageFunction)
     }
     
     mutating func reset() {
-        self.average = 0.0
-        self.count = 0
-        self.full = false
-        samples = [Double].init(repeating: 0.0, count: size)
+        self.ringAverage.reset()
     }
     
     mutating func addSample(x: Double, y: Double, z: Double) -> Double
@@ -36,19 +36,8 @@ struct Motion {
         var motion = abs(x) + abs(y) + abs(z)
         motion = motion / 3
         motion = Double(round(100*motion)/100)
-        
-        samples[count] = motion
-        count = (count + 1) % size
-        
-        if count == 0 {
-            full = true
-        }
-        
-        if full {
-            let avg = samples.reduce(0.0, +) / Double(size)
-            return avg
-        }
-        
-        return -1.0
+
+        return ringAverage.addSample(motion)
     }
 }
+
